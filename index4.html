@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Regjistrim</h1>
+    <hr>
+    <br>
+    <br>
+    <form onsubmit="merrInfo(),event.preventDefault()">
+    <div>
+    <label for="Emri">Emri</label>
+    <input type="text" id="Emri">
+    </div>
+    <div>
+    <label for="Mbiemri">Mbiemri</label>
+    <input type="text" id="Mbiemri">
+    </div>
+    <div>
+        <input type="submit" value="Dergo">
+</div>
+</form>
+        <p>Pershendetje <span id="smsEmri"></span> <span id="smsMbiemri"></span>.</p>
+       <h1>Krahasimi i 2 numrave</h1>
+        <form onsubmit="krahaso(),event.preventDefault()">
+            <div>
+            <label for="numri_1">numri_1</label>
+            <input type="number" id="numri_1">
+            </div>
+            <div>
+            <label for="numri_2">numri_2</label>
+            <input type="number" id="numri_2">
+            </div>
+            <div>
+                <input type="submit" value="Dergo">
+        </div>
+        </form>
+        <p>Krahasim <span id="sms"></span></p>
+    <script src="index2.js"></script>
+</body>
+</html>
